@@ -1,0 +1,7 @@
+import { ArrowDownRight, BadgeCheck, RotateCcw } from 'lucide-react'
+import RecyclingGuide from './RecyclingGuide.jsx'
+export default function DetectionResult({ result, image, onReset }) {
+  if (!result) return null
+  const confidence = Number.isFinite(result.confidence) ? Math.round(result.confidence * 100) : null
+  return <section className="result-section" aria-live="polite"><div className="result-topline"><span className="eyebrow"><BadgeCheck size={15}/> Analysis complete</span><button onClick={onReset} className="reset-link"><RotateCcw size={14}/> Analyse another</button></div><div className="result-card"><img src={image} alt="The image analysed by EcoVision AI"/><div className="result-info"><span className="eyebrow">This looks like</span><h3>{result.guidance?.title || result.category.replaceAll('-', ' ')}</h3><p>{result.guidance?.description || 'The classifier found this waste category.'}</p>{confidence !== null && <div className="confidence"><div><span>Model confidence</span><b>{confidence}%</b></div><div className="confidence-track"><i style={{width:`${confidence}%`}}/></div>{confidence < 55 && <small>Low confidence — treat this as a suggestion and check the item label.</small>}</div>}<div className="model-caption">AI image classification · one item per image</div></div><ArrowDownRight className="result-arrow" size={23}/></div><RecyclingGuide guidance={result.guidance}/></section>
+}

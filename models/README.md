@@ -1,0 +1,3 @@
+# Model setup
+
+The application uses `watersplash/waste-classification` from the Hugging Face Hub by default. Transformers downloads the model weights and image processor into the ignored `models/cache/` folder the first time `backend/app.py` starts (or into the path in `HF_HOME`). Weights are not bundled in this repository. Check `GET /api/health`; only `model.ready: true` means inference is available. The model card lists Battery, Biological, Brown-grass, Cardboard, Clothes, Green-Glass, Metal, Paper, Plastic, Shoes, Trash, and White-Glass. See the root README for source and attribution caveats.

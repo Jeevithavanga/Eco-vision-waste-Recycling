@@ -1,0 +1,143 @@
+/* Larger, calmer type scale with a warm energy accent. */
+body { font-size: 16px; }
+.nav-links { font-size: 15px; }
+.nav-cta { font-size: 14px; }
+.eyebrow { font-size: 12px; letter-spacing: 1.1px; }
+.hero-lede, .identify-intro > p, .benefits-copy > p, .locator-copy > p,
+.section-head > p { font-size: 17px; line-height: 1.75; }
+.button { font-size: 15px; }
+.text-link { font-size: 14px; }
+.trust-row { font-size: 12px; }
+.privacy-line small { font-size: 13px; line-height: 1.5; }
+.identify-intro .backend-note { font-size: 12px; }
+.upload-title { font-size: 18px; }
+.upload-hint, .upload-formats { font-size: 13px; }
+.api-error b { font-size: 15px; }
+.api-error span { font-size: 14px; }
+.api-error button, .inline-error { font-size: 13px; }
+.processing-note { font-size: 13px; }
+.result-info > p, .guide-card > p { font-size: 14px; }
+.result-info > .eyebrow, .guide-heading .eyebrow { font-size: 11px; }
+.confidence > div:first-child, .confidence small, .model-caption { font-size: 12px; }
+.guide-columns h4 { font-size: 13px; }
+.guide-columns p, .guide-columns li { font-size: 13px; }
+.safety-note, .local-note { font-size: 12px; }
+.step-top > span:last-child, .step-card p { font-size: 14px; }
+.step-card h3 { font-size: 18px; }
+.benefit-list h3 { font-size: 17px; }
+.benefit-list p { font-size: 14px; }
+.benefit-number { font-size: 12px; }
+.locator-copy h2 { font-size: clamp(38px, 4vw, 48px); }
+.map-label { font-size: 12px; }
+.map-credit, .osm-credit, .places-empty { font-size: 11px; }
+.places-heading h3 { font-size: 18px; }
+.places-heading a { font-size: 13px; }
+.place-item b { font-size: 13px; }
+.place-item small { font-size: 12px; }
+.footer-main > div > p { font-size: 13px; }
+.footer-up { font-size: 13px; }
+.footer-bottom { font-size: 12px; }
+
+.energy-section { position: relative; overflow: hidden; background: #173b30; color: #f5f6e9; }
+.energy-section::before { content: ''; position: absolute; width: 440px; height: 440px; top: -240px; right: -100px; border-radius: 50%; background: radial-gradient(circle, #efa94b38, transparent 70%); pointer-events: none; }
+.energy-heading { max-width: 700px; margin: 0 auto 42px; text-align: center; position: relative; }
+.energy-heading .eyebrow { color: #edbd70; }
+.energy-heading h2 { color: #fbf8e9; font: 800 clamp(40px, 5vw, 62px)/1.06 Manrope, sans-serif; letter-spacing: -2.8px; margin: 18px 0; }
+.energy-heading h2 em { color: #e6ad53; font-style: normal; }
+.energy-heading > p { max-width: 660px; margin: 0 auto; color: #c3d2c4; font-size: 18px; line-height: 1.7; }
+.energy-flow { display: grid; grid-template-columns: 145px 38px 1fr 38px 160px; align-items: center; gap: 16px; position: relative; }
+.energy-start, .energy-output { min-height: 116px; border-radius: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; text-align: center; font: 700 15px Manrope, sans-serif; }
+.energy-start { background: #ffffff12; border: 1px solid #ffffff20; color: #e2ebdd; }
+.energy-output { background: linear-gradient(145deg, #e8ac4a, #ca7a2c); color: #2e3829; box-shadow: 0 12px 35px #d38b3638; }
+.energy-arrow { color: #e5af55; width: 25px; justify-self: center; }
+.energy-paths { display: grid; gap: 12px; }
+.energy-path { display: grid; grid-template-columns: 46px 1fr; gap: 14px; align-items: start; padding: 17px 19px; border: 1px solid #ffffff1c; border-radius: 16px; background: #ffffff0c; }
+.energy-icon { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 13px; background: #e9ac4930; color: #efbe6b; }
+.energy-path h3 { margin: 0 0 5px; color: #f6f3e6; font: 700 16px Manrope, sans-serif; }
+.energy-path p { margin: 0; color: #c5d0c3; font-size: 14px; line-height: 1.6; }
+.energy-note { max-width: 880px; margin: 24px auto 0; color: #c3d2c4; font-size: 13px; line-height: 1.65; text-align: center; }
+
+@media (max-width: 760px) {
+  .shell { width: min(100% - 38px, 560px); }
+  .section-pad { padding: 76px 0; }
+  .hero-lede, .identify-intro > p, .benefits-copy > p, .locator-copy > p, .section-head > p { font-size: 16px; }
+  .energy-heading h2 { font-size: clamp(38px, 10vw, 52px); letter-spacing: -1.8px; }
+  .energy-heading > p { font-size: 16px; }
+  .energy-flow { grid-template-columns: 1fr; gap: 13px; }
+  .energy-start, .energy-output { min-height: 76px; flex-direction: row; }
+  .energy-arrow { transform: rotate(90deg); }
+  .energy-path { padding: 15px; }
+  .energy-path h3 { font-size: 16px; }
+  .energy-path p { font-size: 14px; }
+  .energy-note { font-size: 12px; }
+  .place-item b { font-size: 12px; }
+  .place-item small { font-size: 11px; }
+}
+
+/* Upload and camera controls stay readable at the same 20px scale. */
+.upload-card .dropzone strong,
+.upload-card .dropzone > span:not(.upload-icon) { font-size: 20px; line-height: 1.5; }
+.upload-card .camera-hint { color: #222; }
+.upload-card .camera-launch,
+.upload-card .analyze-button,
+.upload-card .camera-controls .button { font-size: 20px; }
+.upload-card .camera-launch { min-height: 54px; }
+.upload-card .dropzone { min-height: 230px; }
+@media (max-width: 760px) {
+  .upload-card .dropzone strong,
+  .upload-card .dropzone > span:not(.upload-icon),
+  .upload-card .camera-launch,
+  .upload-card .analyze-button,
+  .upload-card .camera-controls .button { font-size: 20px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* High-contrast, distance-friendly reading pass. */
+:root { color: #111; --ink: #111; --muted: #333; }
+body { color: #111; font-size: 20px; }
+.nav-links, .nav-links a { color: #171717; font-size: 16px; }
+.nav-cta { color: #111; font-size: 16px; }
+.hero h1, .section-head h2, .identify-intro h2, .benefits-copy h2,
+.locator-copy h2 { color: #101010; }
+.hero-lede, .identify-intro > p, .benefits-copy > p, .locator-copy > p,
+.section-head > p { color: #292929; font-size: 20px; }
+.eyebrow { color: #252525; font-size: 14px; }
+.button { font-size: 17px; }
+.text-link { font-size: 16px; }
+.trust-row { color: #333; font-size: 14px; }
+.privacy-line small { color: #292929; font-size: 15px; }
+.identify-intro .backend-note, .upload-hint, .upload-formats { color: #292929; font-size: 15px; }
+.upload-title { color: #111; font-size: 20px; }
+.result-info > p, .guide-card > p { color: #292929; font-size: 20px; }
+.result-info > .eyebrow, .guide-heading .eyebrow { font-size: 13px; }
+.confidence > div:first-child, .confidence small, .model-caption { font-size: 14px; }
+.guide-columns h4 { font-size: 15px; }
+.guide-columns p, .guide-columns li { color: #292929; font-size: 20px; }
+.safety-note, .local-note { color: #292929; font-size: 16px; }
+.step-top > span:last-child, .step-card p { color: #292929; font-size: 20px; }
+.step-card h3, .benefit-list h3 { color: #111; font-size: 19px; }
+.benefit-list p { color: #292929; font-size: 20px; }
+.benefit-number { font-size: 14px; }
+.map-label { font-size: 14px; }
+.map-credit, .osm-credit, .places-empty { color: #292929; font-size: 13px; }
+.places-heading h3 { font-size: 20px; }
+.places-heading a { font-size: 15px; }
+.place-item b { color: #111; font-size: 15px; }
+.place-item small { color: #333; font-size: 16px; }
+.footer-main > div > p { font-size: 15px; }
+.footer-up { font-size: 15px; }
+.footer-bottom { color: #e5e5e5; font-size: 14px; }
+.energy-path h3 { font-size: 18px; }
+.energy-path p { font-size: 20px; }
+.energy-note { font-size: 18px; }
+
+@media (max-width: 760px) {
+  body { font-size: 20px; }
+  .hero-lede, .identify-intro > p, .benefits-copy > p, .locator-copy > p,
+  .section-head > p, .step-card p, .benefit-list p, .result-info > p,
+  .guide-card > p, .guide-columns p, .guide-columns li, .energy-path p { font-size: 20px; }
+  .energy-note { font-size: 17px; }
+}

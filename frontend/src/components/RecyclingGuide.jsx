@@ -1,0 +1,5 @@
+import { AlertTriangle, CheckCircle2, Lightbulb, ShieldCheck } from 'lucide-react'
+export default function RecyclingGuide({ guidance }) {
+  if (!guidance) return null
+  return <div className="guide-card"><div className="guide-heading"><span className="guide-icon"><CheckCircle2 size={19}/></span><div><span className="eyebrow">Your next best step</span><h3>{guidance.title} guide</h3></div></div><p>{guidance.recyclable}</p><div className="guide-columns"><div><h4><CheckCircle2 size={15}/> Before you dispose</h4><ul>{guidance.steps.map(step => <li key={step}>{step}</li>)}</ul></div><div><h4><Lightbulb size={15}/> Reuse idea</h4><p>{guidance.reuse}</p></div></div>{guidance.safety && guidance.safety !== 'None specific.' && <div className="safety-note"><ShieldCheck size={16}/><span>{guidance.safety}</span></div>}<div className="local-note"><AlertTriangle size={15}/> Recycling rules vary by location. Check with your local council or recycling facility to see which items they accept.</div></div>
+}

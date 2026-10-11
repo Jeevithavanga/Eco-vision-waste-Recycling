@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1120" role="img" aria-labelledby="title desc">
+  <title id="title">A reusable bottle beside a growing plant</title>
+  <desc id="desc">A calm, hand-drawn environmental illustration in soft green and cream colors.</desc>
+  <defs>
+    <linearGradient id="wall" x2="0" y2="1"><stop stop-color="#dfe8d2"/><stop offset="1" stop-color="#b7c9aa"/></linearGradient>
+    <linearGradient id="glass" x2="1" y2=".4"><stop stop-color="#99bba2"/><stop offset=".45" stop-color="#e2eee0"/><stop offset="1" stop-color="#88ad91"/></linearGradient>
+    <linearGradient id="table" x2="0" y2="1"><stop stop-color="#d8c7a5"/><stop offset="1" stop-color="#bca986"/></linearGradient>
+  </defs>
+  <rect width="900" height="1120" fill="url(#wall)"/>
+  <circle cx="714" cy="193" r="120" fill="#f3edcf" opacity=".66"/>
+  <path d="M0 700c150-64 277-12 420-33 166-24 318-112 480-46v499H0Z" fill="#c6d4ba" opacity=".63"/>
+  <path d="M0 873h900v247H0z" fill="url(#table)"/>
+  <path d="M0 873c176-27 302 30 453 12 147-18 293-73 447-31v53c-197-39-327 41-501 48-143 6-242-37-399-18Z" fill="#e7d7b8" opacity=".8"/>
+  <ellipse cx="473" cy="927" rx="199" ry="31" fill="#405d49" opacity=".17"/>
+  <!-- bottle -->
+  <path d="M405 247h130v91c0 24 13 46 32 64 40 37 67 90 67 151v322c0 41-33 74-74 74H380c-41 0-74-33-74-74V553c0-61 27-114 67-151 19-18 32-40 32-64Z" fill="url(#glass)" stroke="#63836d" stroke-width="8"/>
+  <path d="M411 249h118v99H411z" fill="#a9c7ad" stroke="#63836d" stroke-width="8"/>
+  <path d="M401 221c0-18 14-32 32-32h74c18 0 32 14 32 32v35H401z" fill="#446d50"/>
+  <path d="M409 203h122M409 220h122" stroke="#71967a" stroke-width="7" stroke-linecap="round"/>
+  <path d="M333 575c64 23 190 26 291 0v287c0 29-23 52-52 52H385c-29 0-52-23-52-52Z" fill="#edf0d9" opacity=".9"/>
+  <path d="M407 680c31-54 81-76 132-72-7 59-42 99-99 113M494 826c-5-87-36-143-98-184" fill="none" stroke="#719b69" stroke-width="12" stroke-linecap="round"/>
+  <path d="M425 710c-57 0-80-25-88-68 50-7 86 15 101 62M507 681c15-48 49-71 95-68-7 45-33 70-88 79M478 769c-47 0-77-23-91-62 47-13 81 4 103 43" fill="#8cac76"/>
+  <path d="M361 642c38 8 61 23 78 61M596 622c-33 10-60 30-80 60M387 706c34 4 57 17 78 45" fill="none" stroke="#557f5e" stroke-width="7" stroke-linecap="round"/>
+  <path d="M355 543c47 10 109 15 171 4" fill="none" stroke="#f8fff4" stroke-width="11" opacity=".65" stroke-linecap="round"/>
+  <!-- little potted sprout -->
+  <path d="M153 802h159l-18 116c-3 20-20 34-40 34h-43c-20 0-37-14-40-34Z" fill="#b9714e"/>
+  <path d="M143 790h180v24H143z" rx="8" fill="#d18b63"/>
+  <path d="M232 790V643m0 76c-44-8-64-33-64-69 38-1 63 18 69 55m-1-21c7-48 32-72 70-74 0 41-22 67-70 79" fill="none" stroke="#537c57" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M232 717c-34-8-48-27-48-53 28 1 46 14 51 36m22-3c8-32 25-48 51-50-2 28-16 46-49 56" fill="#7eaa72"/>
+  <path d="M679 873h98m-49-48v90" stroke="#a3b792" stroke-width="5" opacity=".7"/>
+</svg>

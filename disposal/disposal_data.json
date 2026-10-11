@@ -1,0 +1,200 @@
+{
+"plastic": {
+"display_name": "Plastic Waste",
+"waste_type": "Recyclable Waste",
+"bin": "Plastic Recycling Bin",
+"recommended_action": "Separate clean plastic items and place them in an accepted plastic recycling collection point.",
+"collection_route": "Accepted plastic recycling collection",
+"ordinary_bin": "Depends on local rules",
+"special_facility_required": false,
+"preparation": [
+"Empty the container.",
+"Rinse off food or liquid residue.",
+"Separate different plastic types if required by local rules."
+],
+"recyclable": true,
+"environmental_impact": "Plastic can persist in the environment and harm wildlife when improperly discarded.",
+"safety": "Do not recycle containers with unknown chemical contents without checking local guidance.",
+"icon": "♻️",
+"tips": [
+"Reuse plastic containers when possible.",
+"Avoid mixing plastic with wet or food-contaminated waste."
+]
+},
+"paper": {
+"display_name": "Paper Waste",
+"waste_type": "Potentially Recyclable Waste",
+"bin": "Paper Recycling Bin",
+"recommended_action": "Place clean, dry paper in a paper recycling collection point.",
+"collection_route": "Paper recycling collection",
+"ordinary_bin": "Depends on local rules",
+"special_facility_required": false,
+"preparation": [
+"Keep paper dry.",
+"Remove plastic wrapping and other non-paper materials.",
+"Check local rules for coated or laminated paper."
+],
+"recyclable": true,
+"environmental_impact": "Recycling suitable paper can reduce demand for virgin materials.",
+"safety": "Avoid recycling paper contaminated with oil or unsuitable substances.",
+"icon": "📄",
+"tips": [
+"Reuse paper before recycling.",
+"Keep paper separate from food waste."
+]
+},
+"cardboard": {
+"display_name": "Cardboard Waste",
+"waste_type": "Potentially Recyclable Waste",
+"bin": "Paper and Cardboard Recycling Bin",
+"recommended_action": "Flatten clean cardboard boxes and take them to an accepted paper recycling collection point.",
+"collection_route": "Paper and cardboard recycling collection",
+"ordinary_bin": "Depends on local rules",
+"special_facility_required": false,
+"preparation": [
+"Flatten boxes.",
+"Remove tape and plastic packaging where practical.",
+"Keep cardboard dry and free from food residue."
+],
+"recyclable": true,
+"environmental_impact": "Recycling cardboard can conserve raw materials and reduce landfill waste.",
+"safety": "Handle cutting tools and packaging staples carefully.",
+"icon": "📦",
+"tips": [
+"Reuse boxes for storage or packaging.",
+"Do not place heavily food-soiled cardboard with clean recyclables."
+]
+},
+"glass": {
+"display_name": "Glass Waste",
+"waste_type": "Potentially Recyclable Waste",
+"bin": "Glass Collection Bin",
+"recommended_action": "Take accepted glass bottles and jars to a designated glass collection point.",
+"collection_route": "Glass recycling collection",
+"ordinary_bin": "Depends on local rules",
+"special_facility_required": false,
+"preparation": [
+"Empty the container.",
+"Rinse if required by the collection service.",
+"Keep broken glass safely contained and follow local handling rules."
+],
+"recyclable": true,
+"environmental_impact": "Suitable glass can often be recycled into new glass products.",
+"safety": "Do not handle broken glass with bare hands.",
+"icon": "🫙",
+"tips": [
+"Do not assume mirrors, ceramics, bulbs, or window glass belong in bottle-and-jar recycling.",
+"Handle broken glass carefully."
+]
+},
+"metal": {
+"display_name": "Metal Waste",
+"waste_type": "Potentially Recyclable Waste",
+"bin": "Metal Recycling Collection",
+"recommended_action": "Separate accepted metal cans and scrap and take them to an appropriate recycling collection point.",
+"collection_route": "Metal recycling collection",
+"ordinary_bin": "Depends on local rules",
+"special_facility_required": false,
+"preparation": [
+"Empty containers.",
+"Rinse food residue if needed.",
+"Keep sharp edges protected."
+],
+"recyclable": true,
+"environmental_impact": "Recycling suitable metals can reduce the need to extract new raw materials.",
+"safety": "Handle sharp metal edges carefully.",
+"icon": "🥫",
+"tips": [
+"Separate metal from mixed-material packaging when practical.",
+"Use authorized handlers for large or hazardous metal items."
+]
+},
+"organic": {
+"display_name": "Organic Waste",
+"waste_type": "Biodegradable Waste",
+"bin": "Wet Waste or Compost Bin",
+"recommended_action": "Place suitable food scraps and garden waste in an approved composting or organic-waste collection system.",
+"collection_route": "Organic waste collection or composting facility",
+"ordinary_bin": "Depends on local rules",
+"special_facility_required": false,
+"preparation": [
+"Separate organic waste from plastic and other dry waste.",
+"Remove packaging.",
+"Follow local composting rules."
+],
+"recyclable": true,
+"environmental_impact": "Composting suitable organic waste can return nutrients to the soil and reduce landfill disposal.",
+"safety": "Store food waste properly to reduce pests and unpleasant odours.",
+"icon": "🍃",
+"tips": [
+"Use a suitable home composting system if available.",
+"Do not add meat, dairy, or oily food unless the composting system accepts it."
+]
+},
+"electronic": {
+"display_name": "Electronic Waste",
+"waste_type": "Special Collection Waste",
+"bin": "Authorized E-Waste Collection",
+"recommended_action": "Take discarded electronics to an authorized e-waste collection centre or an approved take-back program.",
+"collection_route": "Authorized e-waste collection facility",
+"ordinary_bin": false,
+"special_facility_required": true,
+"preparation": [
+"Do not place electronics in ordinary household bins.",
+"Remove personal data from devices where possible.",
+"Follow collection instructions for batteries included in devices."
+],
+"recyclable": true,
+"environmental_impact": "Improper disposal can release hazardous substances and waste valuable recoverable materials.",
+"safety": "Do not burn or dismantle electronic waste without suitable training.",
+"icon": "💻",
+"tips": [
+"Repair or donate working devices where appropriate.",
+"Use an authorized collection service."
+]
+},
+"battery": {
+"display_name": "Battery Waste",
+"waste_type": "Special Collection Waste",
+"bin": "Battery Collection Point",
+"recommended_action": "Use an approved battery collection point or authorized battery-waste service.",
+"collection_route": "Battery collection point or authorized battery recycler",
+"ordinary_bin": false,
+"special_facility_required": true,
+"preparation": [
+"Keep batteries separate from ordinary household waste.",
+"Do not puncture, crush, or burn batteries.",
+"For damaged or swollen batteries, follow specialist handling guidance."
+],
+"recyclable": true,
+"environmental_impact": "Improperly discarded batteries can cause fires and release harmful substances.",
+"safety": "Do not dismantle, crush, puncture or burn batteries. Seek professional guidance for damaged, swollen or leaking batteries.",
+"icon": "🔋",
+"tips": [
+"Keep batteries away from heat and metal objects.",
+"Follow local battery collection instructions."
+]
+},
+"general": {
+"display_name": "General or Mixed Waste",
+"waste_type": "Unclassified Waste",
+"bin": "General Waste Bin",
+"recommended_action": "Use the local general-waste collection service only for items that cannot be reused, recycled, or composted through available programs.",
+"collection_route": "Municipal general waste service, if accepted",
+"ordinary_bin": "Only if local rules permit",
+"special_facility_required": "Check the item before disposal",
+"preparation": [
+"Check whether the item can be reused or recycled first.",
+"Keep hazardous items and electronic waste out of general waste.",
+"Follow municipal waste-separation instructions."
+],
+"recyclable": false,
+"environmental_impact": "Mixed waste may increase landfill use and make recovery of recyclable materials more difficult.",
+"safety": "Do not assume unidentified waste, batteries or electronic waste are safe for ordinary disposal.",
+"icon": "🗑️",
+"tips": [
+"Separate recyclable materials before disposal.",
+"Check local guidance for unusual or hazardous items."
+]
+}
+}
